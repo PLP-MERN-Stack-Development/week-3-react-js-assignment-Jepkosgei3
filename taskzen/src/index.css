@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+  body {
+    background-color: #1a2a44; /* Rich navy blue background */
+    @apply antialiased;
+  }
+}
+
+/* Custom colors and animations */
+@layer utilities {
+  .bg-navy-800 {
+    background-color: #1a2a44;
+  }
+  .animate-spin-slow {
+    animation: spin 4s linear infinite;
+  }
+}
+
+/* Animation for spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a2a44;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4a261; /* Orange */
+  border-radius: 9999px;
+}
