@@ -1,71 +1,75 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19816591&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+# TaskElegance
 
-## Assignment Overview
+TaskElegance is a stylish and intuitive task management application built with React. It allows users to add, edit, delete, and track tasks with priorities (low, medium, high) and a sleek user interface featuring a theme toggle, task filtering, and elegant card-based design. The app is designed with a navy-and-orange color scheme, ensuring a visually appealing experience.
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## Features
 
-## Getting Started
+- **Add Tasks**: Create tasks with titles, descriptions, and priority levels.
+- **Task Management**: Mark tasks as completed, delete them, or expand for details.
+- **Priority Levels**: Categorize tasks as low, medium, or high with color-coded indicators.
+- **Filtering**: View all, pending, or completed tasks with tab navigation.
+- **Theme Toggle**: Switch between light and dark modes.
+- **Responsive Design**: Optimized for desktop and mobile views.
+- **Real-Time Updates**: Tasks update instantly with a success notification.
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
+## Technologies Used
+
+- **React**: For building the user interface and managing state.
+- **Tailwind CSS**: For styling with utility-first classes.
+- **Lucide React**: For icons (e.g., Sparkles animation).
+- **Vite**: For fast development and bundling.
+
+## Prerequisites
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-Jepkosgei3
+   cd taskzen
    ```
-   npm install
+
+2. Install dependencies:
+   ```bash
+   pnpm install
    ```
-4. Start the development server:
+
+3. Start the development server:
+   ```bash
+   pnpm run dev
    ```
-   npm run dev
-   ```
 
-## Files Included
+4. Open your browser and navigate to `http://localhost:5173/` to view the app.
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## Usage
 
-## Requirements
+- **Add a Task**: Enter a title, optional description, and select a priority. Click "Add Task" to save.
+- **Manage Tasks**: Click the checkmark to toggle completion, the trash icon to delete, or the task text to expand details.
+- **Filter Tasks**: Use the "All," "Pending," or "Completed" tabs to filter the task list.
+- **Toggle Theme**: Click the sun/moon icon in the header to switch themes.
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+## File Structure
 
-## Project Structure
+- `src/App.jsx`: Main component with task state and UI layout.
+- `src/components/TaskList.jsx`: Component for rendering and managing the task list.
+- `src/components/ThemeToggle.jsx`: Component for theme switching.
+- `index.css`: Custom Tailwind and CSS styles.
+- `package.json`: Project dependencies and scripts.
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+## Contributing
 
-## Submission
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes and commit: `git commit -m "Description of changes"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## Acknowledgments
 
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+- Inspired by modern task management apps with a focus on elegance.
+- Thanks to the open-source communities behind React, Tailwind CSS, and Lucide React.
